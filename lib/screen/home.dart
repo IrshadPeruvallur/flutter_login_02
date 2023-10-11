@@ -23,15 +23,17 @@ class ScreenHome extends StatelessWidget {
           
           icon:Icon(Icons.logout))
         ],
-      
-      
-      ),body: ListView.builder(itemBuilder:(context, index) =>  ListTile(
-              title: Text('CBI 5$index'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            ),
-            itemCount: 100, ),
+      ),
+    
+      body:ListView.builder(
+        itemCount: 15,
+        itemBuilder:(context, index) => Card(
+        child: ListTile(
+          title:Text("List${index+1}") ,
+          leading: Icon(Icons.list),
+        ),
+      )
+      ,)
     );
   }
   signout(BuildContext context){
