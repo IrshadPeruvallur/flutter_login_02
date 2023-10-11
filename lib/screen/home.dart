@@ -23,119 +23,126 @@ class ScreenHome extends StatelessWidget {
           
           icon:Icon(Icons.logout))
         ],
-      ),
-      body:ListView(children: [
-        Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
+      // ),
+      // body:ListView.(children: [
+      //   Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   ),
+      //    Card(
+      //     color: Colors.blue.shade100,
+      //     child:Column(children: [
+      //       ListTile(
+      //         title: Text('CBI 5'),
+      //         subtitle: Text("Staring Mammootty"),
+      //         leading: Icon(Icons.movie),
+      //         onTap: (){},
+      //       )
+      //     ]) ,
+      //   )
+      // ],)
+      
+      ),body: ListView.builder(itemBuilder:(context, index) =>  ListTile(
+              title: Text('CBI 5$index'),
               subtitle: Text("Staring Mammootty"),
               leading: Icon(Icons.movie),
               onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        ),
-         Card(
-          color: Colors.blue.shade100,
-          child:Column(children: [
-            ListTile(
-              title: Text('CBI 5'),
-              subtitle: Text("Staring Mammootty"),
-              leading: Icon(Icons.movie),
-              onTap: (){},
-            )
-          ]) ,
-        )
-      ],)
+            ),itemCount: 100, ),
     );
   }
   signout(BuildContext context){

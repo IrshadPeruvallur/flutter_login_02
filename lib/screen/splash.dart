@@ -19,27 +19,27 @@ class _ScreensplashState extends State<Screensplash> {
     
     
   }
-  @override
-  void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-  }
+  // @override
+  // void didChangeDependencies() {
+  //   // TODO: implement didChangeDependencies
+  //   super.didChangeDependencies();
+  // }
    @override
   Widget build(BuildContext context) {
     return  const Scaffold(
       body: Center(child:
       Image(image: AssetImage("assets/image/01.jpg"),width: 200,)
       
-      /* Text("Welcome"), */
+      
        ),
     );
   }
 
-  @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-  }
+  // @override
+  // void dispose() {
+  //   // TODO: implement dispose
+  //   super.dispose();
+  // }
 
   Future<void>gotologin()async{
     await Future.delayed(Duration(seconds: 3));
