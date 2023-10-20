@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'screen/splash.dart';
 import 'screen/login.dart';
 
+const save_key_name = 'usserloggedin';
+
 void main() {
   runApp(const MyApp());
 }

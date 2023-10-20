@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:login_page_01/screen/login.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({super.key});
@@ -24,7 +25,7 @@ class ScreenHome extends StatelessWidget {
           icon:Icon(Icons.logout))
         ],
       ),
-    
+      
       body:ListView.builder(
         itemCount: 15,
         itemBuilder:(context, index) => Card(
@@ -36,7 +37,10 @@ class ScreenHome extends StatelessWidget {
       ,)
     );
   }
-  signout(BuildContext context){
+  signout(BuildContext context)async{
+    final _sharedPrfs = await SharedPreferences.getInstance();
+    await _sharedPrfs.clear();
+      
     Navigator.of(context).pushAndRemoveUntil(
       MaterialPageRoute(builder: (context1)=>Screenlogin()), (route) => false);
   }

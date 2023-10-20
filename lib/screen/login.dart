@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:login_page_01/main.dart';
 import 'package:login_page_01/screen/home.dart';
-
+import 'package:shared_preferences/shared_preferences.dart';
 class Screenlogin extends StatefulWidget {
   Screenlogin({super.key});
 
@@ -91,12 +92,15 @@ class _ScreenloginState extends State<Screenlogin> {
     );
   }
 
-  void checklogin(BuildContext context){
+  void checklogin(BuildContext context) async{
     final _username=_usernameController.text;
     final _password=_passwordController.text;
     if(_username=="irshad" && _password=="irs12"){
       print("Username pass match");
-      //Go to home
+
+        final _sharedPrfs = await SharedPreferences.getInstance();
+        await _sharedPrfs.setBool(save_key_name, true);
+      
       Navigator.of(context).pushReplacement(MaterialPageRoute(builder:(context1)=>ScreenHome()));
     }else{
       final _errorMessage="Username password does not match";
